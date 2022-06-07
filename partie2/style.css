@@ -1,0 +1,30 @@
+body {
+  font-family: monospace;
+}
+
+h1 {
+  text-align: center;
+  width: 600px;
+  margin: 2em auto 0;
+  /* margin: 2em auto 0; */
+  border-bottom: solid black 10px;
+}
+
+#main {
+  position: absolute;
+  top: 120px;
+  left: 350px;
+}
+
+legend {
+  text-transform: uppercase;
+}
+
+label {
+  font-weight: bold;
+}
+
+#language {
+  color: red;
+  background-color: #c0c0ff;
+}

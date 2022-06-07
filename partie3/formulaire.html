@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Mon premier formulaire HTML</h1>
+    <form action="destination.html" method="get">
+      <fieldset id="main">
+        <legend>Les coordonnées personelles</legend>
+        <div>
+          <label for="nom">Nom</label>
+          <input type="text" name="nom" id="nom" />
+        </div>
+        <div>
+          <label for="prenom">Prenom</label>
+          <input type="text" name="prenom" id="prenom" />
+        </div>
+        <div>
+          <label for="date">Date de naissance</label>
+          <input type="date" name="date" id="date" />
+        </div>
+        <fieldset>
+          <legend>Lieu de Naissance</legend>
+          <input type="radio" checked name="lieu" value="Alger" id="alger" />
+          <label for="alger">Alger</label>
+          <input type="radio" name="lieu" value="Guelma" id="guelma" />
+          <label for="guelma">Guelma</label>
+          <input
+            type="radio"
+            name="lieu"
+            value="Constantine"
+            id="constantine"
+          />
+          <label for="constantin">Constantine</label>
+          <input type="radio" name="lieu" value="autre" id="autre" />
+          <label for="autre">Autre</label>
+        </fieldset>
+        <label for="adresse"> Adresse </label>
+        <br />
+        <textarea
+          name="adresse"
+          placeholder="Detailler votre adresse ici"
+          id="adresse"
+          rows="10"
+          cols="100"
+        ></textarea>
+        <div>
+          <label for="code">Code Postal</label>
+          <input type="number" min="0" name="code" id="code" />
+        </div>
+        <div>
+          <label for="email">Adresse Electronique</label>
+          <input type="email" name="email" id="email" />
+        </div>
+        <div>
+          <label for="phone">Telephone</label>
+          <input type="text" id="phone" name="phone" />
+        </div>
+        <label for="semestre">Semestre</label>
+        <select name="semester" id="semestre">
+          <option value="s1">S1</option>
+          <option value="s2">S2</option>
+          <option value="s3">S3</option>
+          <option value="s4">S4</option>
+        </select>
+        <label for="level">Niveau en HTML</label>
+        <input type="range" min="0" max="10" step="1" name="level" id="level" />
+        <fieldset id="language">
+          <legend>Connaissance</legend>
+          <input type="checkbox" name="html" value="html" id="html" />
+          <label for="html">HTML</label>
+          <input type="checkbox" name="css" value="css" id="css" />
+          <label for="css">CSS</label>
+          <input type="checkbox" name="js" value="js" id="js" />
+          <label for="js">Javascript</label>
+          <input type="checkbox" name="php" value="php" id="php" />
+          <label for="php">PHP</label>
+        </fieldset>
+        <button type="button" id="submit">Envoyer</button>
+        <button type="reset">Renitialiser tous les champs</button>
+      </fieldset>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
